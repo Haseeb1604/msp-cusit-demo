@@ -1,0 +1,119 @@
+.Certificates .title::after {
+    content: "Redeem Certificate";
+}
+
+.Events .title::after {
+    content: "Events Held";
+}
+
+.Events .Events-Cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Events  .card{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin:20px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f3f2f2;
+    box-shadow: 3px 3px 6px #cacaca, -3px -3px 6px #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.Events .card:hover{
+    transform: scale(1.05);
+}
+
+.card .card-img-top{
+    width: 100%;
+}
+
+.card img{
+    width: 100%;
+}
+
+.Events h3{
+    color: rgb(0, 0, 0);
+    text-shadow: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 990px){
+    .Events  .card{
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 768px){
+    .Certificates .row aside:nth-child(1){
+        display: none;
+    }
+    .Events  .card{
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 550px){
+    .Events  .card{
+        max-width: 400px;
+    }
+}
+
+
+@media (max-width: 425px){
+    section .title{
+        font-size: 33px!important;
+    }
+    .Events  .card{
+        max-width: 350px;
+    }
+    .Events h3{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 392px){
+    .search-button button{
+        width: 100%;
+    }
+    section .title{
+        font-size: 30px;
+    }
+    section .title::after {
+        font-size: 16px!important;
+    }
+    .Events  .card{
+        max-width: 300px;
+    }
+    .Events h3{
+        font-size: 1.2rem;
+    }
+    .Events .card p,
+    .Events .card li{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px){
+    section .title::after {
+        font-size: 14px!important;
+    }
+    .Events  .card{
+        max-width: 250px;
+    }
+    .Events h3{
+        font-size: 1rem;
+    }
+    .Events .card p,
+    .Events .card li{
+        font-size: 0.8rem;
+    }
+}

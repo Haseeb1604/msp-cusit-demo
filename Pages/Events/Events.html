@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+			crossorigin="anonymous"
+		></script>
+
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="shortcut icon" href="/Assets/msp.png" type="image/x-icon" />
+
+		<link rel="stylesheet" href="/Style/nav.css" />
+		<link rel="stylesheet" href="./Events.css" />
+		<link rel="stylesheet" href="../Team/team.css" />
+
+		<title>Events</title>
+	</head>
+	<body>
+		<a href="#" class="scroll-up-btn">
+			<i class="fas fa-angle-up"></i>
+		</a>
+		<header class="" id="fixedNav">
+			<nav
+				class="navbar navbar-expand-md navbar-light pt-3 pb-3 w-100"
+				style="background: rgba(0, 0, 0, 0.8)"
+			>
+				<div class="container-lg">
+					<a class="navbar-brand" href="#"
+						><img
+							src="../../Assets/msp-cusit.svg"
+							class="brand-img"
+							alt="brand-logo"
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link home" href="/index.html#home">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link about" href="/index.html#about">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link Team active" href="/index.html#Team">Team</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link events" href="/index.html#events">Events</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link joinus" href="/index.html#joinus">Join Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="breadcrumb_nav">
+			<div class="breadcrumb_content">
+				<div class="breadcrumb_nav_list d-flex justify-content-center">
+					<div
+						class="breadcrumb_item"
+						onclick="window.open('/index.html#home','_self')"
+					>
+						Home
+					</div>
+					<div class="breadcrumb_item">&nbsp>&nbsp</div>
+					<div class="breadcrumb_item">Events</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="Certificates mt-5">
+			<div class="container-lg">
+				<h2 class="title">Certificate</h2>
+				<div class="row ms-auto me-auto">
+					<aside class="col col-md-2"></aside>
+					<aside class="col col-xs-8 col-sm-8 col-md-7">
+						<input
+							type="text"
+							name="certificateID"
+							id="certID"
+							class="form-control"
+							placeholder="Please Enter Your Certificate ID"
+						/>
+						<div class="form-text">
+							Check your email from Umair.Jibran@studentambassadors.com
+							containing link to your certificate
+						</div>
+					</aside>
+					<aside class="col search-button">
+						<button
+							id="search_certificate"
+							class="btn btn-outline-primary"
+							onclick="search();"
+						>
+							Search
+						</button>
+					</aside>
+				</div>
+			</div>
+		</section>
+
+		<section class="Events mt-5">
+			<div class="container">
+				<h2 class="title">Events</h2>
+				<div class="Events-Cards">
+					<div class="card">
+						<div class="card-img-top">
+							<img src="/Assets/introToGitAndGitHub.svg" alt="" />
+						</div>
+						<div class="card-body">
+							<h3>Introduction To Git &amp; GitHub</h3>
+							<p style="text-align: justify">
+								This Special Workshop is for everyone in general who want to
+								learn the basics of Git &amp; GitHub. The workshop will focus
+								on:
+							</p>
+							<ul class="text-start">
+								<li>Creating a GitHub Account</li>
+								<li>Creating a Repository</li>
+								<li>Creating an Issue</li>
+								<li>Working on Branches</li>
+								<li>Opening a Pull Request</li>
+								<li>Merging a Pull Request</li>
+								<li>Basics of Markdown</li>
+								<li>Installing Git on a local machine</li>
+								<li>Setting up Git Environment</li>
+								<li>Cloning a Repository to the local machine</li>
+								<li>Fetching and Pulling changes from remote Repository</li>
+								<li>Tracking changes</li>
+								<li>Pushing Local repository to remote</li>
+								<li>A BONUS!!</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="card-footer">
+							<small class="text-mute">September 20, 2020</small>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-top">
+							<img
+								src="https://res.cloudinary.com/msp-cusit/image/upload/v1602229776/banners/career-path.png"
+								alt=""
+							/>
+						</div>
+						<div class="card-body">
+							<h3>Career Path in CS/IT</h3>
+							<p style="text-align: justify">
+								This Event will be focused on Career paths one can peruse in
+								Computer Science and Information Technology, The Guest Speakers
+								of this event will be:
+							</p>
+							<ul class="text-start">
+								<li>Dr. Arlene Caballero</li>
+								<li>Umair Jibran</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="card-footer">
+							<small class="text-mute">October 10, 2020</small>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-top">
+							<img
+								src="https://res.cloudinary.com/msp-cusit/image/upload/v1602229770/banners/dubhacks.png"
+								alt=""
+							/>
+						</div>
+						<div class="card-body">
+							<h3>DubHacks 2020</h3>
+							<p style="text-align: justify">
+								Create alongside the brightest students in the world as you put
+								your pen to paper and bring your technological imaginations to
+								life. Your next big thing starts at the largest 24-hour
+								hackathon hosted in the Pacific Northwest - this year,
+								experience a whole new DubHacks from anywhere you call home.
+								Questions to consider:
+							</p>
+							<ul class="text-start">
+								<li>
+									Do virtual platforms deliver unique entertainment experiences
+									in a meaningful manner?
+								</li>
+								<li>
+									How can e-commerce and consumption be ethical and sustainable,
+									while remaining efficient?
+								</li>
+								<li>
+									What obstacles stand in the way of building sustainable online
+									businesses?
+								</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="card-footer">
+							<small class="text-mute">October 17-18, 2020</small>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-top">
+							<img
+								src="https://res.cloudinary.com/msp-cusit/image/upload/v1609165112/banners/tcs_figma.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="card-body">
+							<h3>Learn Figma</h3>
+							<p style="text-align: justify">
+								Do you want to learn how to design a website with Figma? What we
+								will be going through?
+							</p>
+							<ul class="text-start">
+								<li>Introduction to User Interface(UI)</li>
+								<li>Importance of UI</li>
+								<li>Some UI Tools we have</li>
+								<li>Intro to Figma</li>
+								<li>Figma Interface</li>
+								<li>Working Efficiently in Figma</li>
+								<li>Drawing Lines, Rectangle, Ellipse.</li>
+								<li>Working with Frames.</li>
+								<li>Aligning Components.</li>
+								<li>Creating a Basic UI</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="card-footer">
+							<small class="text-mute">January 17, 2021</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="center footer pt-3 pb-3">
+			<div class="container row ms-auto me-auto">
+				<div class="col-md-6 col-xs-12 col-sm-6 col-lg-6 mt-5 text-center">
+					<h2 class="footer-title">Connect with MSP-CUSIT</h2>
+					<div class="social-links mt-4">
+						<a
+							href="https://www.facebook.com/MSPCUSIT"
+							class="ml-2 text-decoration-none"
+						>
+							<img
+								class="footer-icon"
+								src="../../Assets/icons/facebook.svg"
+								alt="facebook icon"
+							/>
+						</a>
+						&nbsp;
+						<a
+							href="https://www.twitter.com/umairjibran7"
+							class="ml-2 text-decoration-none"
+						>
+							<img
+								class="footer-icon"
+								src="../../Assets/icons/twitter.svg"
+								alt="twitter icon"
+							/>
+						</a>
+						&nbsp;
+						<a
+							href="https://github.com/organizations/MSP-CUSIT/"
+							class="ml-2 text-decoration-none"
+						>
+							<img
+								class="footer-icon"
+								src="../../Assets/icons/github.svg"
+								alt="github icon"
+							/>
+						</a>
+						&nbsp;
+						<a
+							href="https://www.linkedin.com/company/msp-cusit/"
+							class="ml-2 text-decoration-none"
+						>
+							<img
+								class="footer-icon"
+								src="../../Assets/icons/linkedin.svg"
+								alt="linkedin icon"
+							/>
+						</a>
+						<br /><br />
+						<a
+							href="https://discord.gg/rtnbwymety"
+							class="text-decoration-none text-white"
+						>
+							<img
+								class="footer-icon"
+								src="../../Assets/icons/discord.svg"
+								alt="whatsapp icon"
+							/>
+						</a>
+						&nbsp;
+						<a
+							href="https://msp-cusit.slack.com/"
+							class="text-decoration-none text-white"
+						>
+							<img
+								class="footer-icon"
+								src="../../Assets/icons/slack.svg"
+								alt="whatsapp icon"
+							/>
+						</a>
+						&nbsp;
+						<a
+							href="https://chat.whatsapp.com/JBBIJMJiBmmCc0u1cigwyF"
+							class="text-decoration-none text-white"
+						>
+							<img
+								class="footer-icon"
+								src="../../Assets/icons/whatsapp.svg"
+								alt="whatsapp icon"
+							/>
+						</a>
+						&nbsp;
+						<a
+							href="mailto:umair.jibran@studentambassadors.com"
+							class="ml-2 text-decoration-none"
+						>
+							<img
+								class="footer-icon"
+								src="../../Assets/icons/email.svg"
+								alt="mail icon"
+							/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6 col-lg-6 text-center mt-5">
+					<img src="../../Assets/msp.png" alt="MSP logo" style="width: 15rem" />
+				</div>
+			</div>
+			<div class="text-center mt-5" style="font-size: 1em">
+				Designed by
+				<a class="text-decoration-none text-info" href="./M-Haseeb.html"
+					>MHaseeb1604</a
+				>
+				© Copyright 2021 <b>MSP-CUSIT</b>
+			</div>
+		</footer>
+		<script>
+			let navbar = document.getElementById("fixedNav");
+			let toggler = document.querySelector(".navbar-toggler");
+			let brand = document.querySelector(".brand-img");
+			let scroll = document.querySelector(".scroll-up-btn");
+
+			let sections = document.querySelectorAll("section");
+			let navlists = document.querySelectorAll(".nav-link");
+
+			window.onscroll = () => {
+				if (window.pageYOffset > 50) {
+					navbar.classList.add("fixed-top");
+					navbar.classList.add("sticky");
+					scroll.classList.add("show");
+				} else {
+					navbar.classList.remove("sticky");
+					navbar.classList.remove("fixed-top");
+					scroll.classList.remove("show");
+				}
+			};
+		</script>
+		<!-- <script src="/JavaScript/navbar.js"></script> -->
+	</body>
+</html>

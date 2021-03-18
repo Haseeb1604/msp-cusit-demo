@@ -1,0 +1,218 @@
+.breadcrumb_nav{
+    padding: 9px 0;
+    background: rgb(0, 102, 255);
+    border-top: 2px solid rgb(0, 10, 255);
+}
+
+.breadcrumb_nav .breadcrumb_content{
+    width: 25%;
+    margin: 0 auto;
+}
+
+.breadcrumb_nav .breadcrumb_nav_list{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgb(0, 0, 255), -1px -1px 2px rgb(0, 0, 255);
+}
+
+.breadcrumb_nav .breadcrumb_nav_list .breadcrumb_item:nth-of-type(odd){
+    cursor: pointer;
+}
+
+.breadcrumb_nav .breadcrumb_nav_list .breadcrumb_item:nth-of-type(even){
+    cursor: default;
+}
+
+.profile{
+    padding: 30px 0;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 230px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(0, 0, 255);
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.profile .img-container{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.profile .img-container img{
+    width: 100%;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #b3b3b3, #d5d5d5);
+    box-shadow:  -5px 5px 9px #a1a1a1,
+                5px -5px 9px #ededed;
+    transition: all 0.5s ease;
+}
+
+.profile .img-container img:hover{
+    transform: scale(1.04);
+}
+
+/* Connect Section Start */
+.links{
+    background: rgb(30, 30, 30); 
+    border-bottom: 2px solid rgb(0, 0, 255);
+    padding: 4px 0;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black, 2px 2px 4px black;
+}
+
+.links .navbar {
+    background: transparent!important;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.links .nav-item img{
+    transition: all 0.5s ease;
+}
+
+.links .nav-item img{
+    transform: scale(1.05);
+}
+
+.links .navbar .nav-item .show-label{
+    display: none;
+}
+
+.links .navbar .navbar-brand{
+    margin-left: auto;
+}
+
+.links .navbar .navbar-brand .brand{
+    text-align: right;
+}
+
+@media (max-width: 990px){ 
+    .breadcrumb_nav .breadcrumb_content{
+        width: 36%;
+        margin: 0 auto;
+    }
+    .links .navbar .nav-item{
+        margin: 0 8px;
+    }
+    .links .navbar .navbar-nav{
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 767px){ 
+    .breadcrumb_nav .breadcrumb_content{
+        width: 46%;
+        margin: 0 auto;
+    }
+    .profile .about-detail{
+        margin-top: 30px;
+    }
+    .profile .about-detail h2{
+        font-size: 30px;
+    }
+    .links .navbar .navbar-brand{
+        text-align: center;
+        margin: 0;
+        font-size: 28px;
+    }
+    .links .navbar .nav-item{
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 600px){ 
+    .breadcrumb_nav .breadcrumb_content{
+        width: 56%;
+    }
+    .breadcrumb_nav .breadcrumb_nav_list{
+        font-size: 16px;
+    }
+    .links .navbar .nav-item{
+        margin: 0;
+    }
+    .links .navbar .navbar-nav{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 425px){ 
+    .breadcrumb_nav .breadcrumb_content{
+        width: 66%;
+    }
+    .breadcrumb_nav .breadcrumb_nav_list{
+        font-size: 15px;
+    }
+    .links .navbar .navbar-nav{
+        flex-direction: column!important;
+    }
+    .links .navbar .nav-item .show-label{
+        display: block;
+    }
+    .links .navbar{
+        width: 100%;
+    }
+    .links .navbar .navbar-brand .brand{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .links .nav-item a{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .links .nav-item a p{
+        color: white;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 375px){ 
+    .breadcrumb_nav .breadcrumb_content{
+        width: 80%;
+    }
+    .links .nav-item a p{
+        font-size: 14px;
+    }
+    .profile .about-detail .event table{
+        font-size: 14px;
+    }
+    .profile .title::after{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 320px){
+    .profile .title::after{
+        font-size: 15px;
+    }
+}
