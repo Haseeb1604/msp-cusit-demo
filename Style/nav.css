@@ -6,6 +6,12 @@
 	text-decoration: none;
 }
 
+.js-loading *,
+.js-loading *::before,
+.js-loading *::after{
+	animation-play-state: paused !important;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -29,14 +35,43 @@ html {
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+	-webkit-animation: slide-out-bck-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-bck-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+
+ @-webkit-keyframes slide-out-bck-bottom {
+	0% {
+	  -webkit-transform: translateZ(0) translateY(0);
+			  transform: translateZ(0) translateY(0);
+	  opacity: 1;
+	}
+	100% {
+	  -webkit-transform: translateZ(-1100px) translateY(1000px);
+			  transform: translateZ(-1100px) translateY(1000px);
+	  opacity: 0;
+	}
+  }
+  @keyframes slide-out-bck-bottom {
+	0% {
+	  -webkit-transform: translateZ(0) translateY(0);
+			  transform: translateZ(0) translateY(0);
+	  opacity: 1;
+	}
+	100% {
+	  -webkit-transform: translateZ(-1100px) translateY(1000px);
+			  transform: translateZ(-1100px) translateY(1000px);
+	  opacity: 0;
+	}
+  }
+  
+  
 
 .scroll-up-btn.show {
 	pointer-events: auto;
 	opacity: 1;
 	bottom: 30px;
-	-webkit-animation: tilt-in-bottom-2 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: tilt-in-bottom-2 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: tilt-in-bottom-2 0.6s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-bottom-2 0.6s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .scroll-up-btn:hover {

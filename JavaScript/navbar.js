@@ -1,4 +1,9 @@
+document.body.className += "js-loading";
+showpage = () =>{
+    document.body.className = document.body.className.replace("js-loading","")
+}
 window.onload = () =>{
+    showpage()
     let navbar = document.getElementById("fixedNav")
     let toggler = document.querySelector(".navbar-toggler")
     let brand = document.querySelector('.brand-img')
