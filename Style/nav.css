@@ -1,7 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	text-decoration: none;
 }
 
@@ -25,6 +26,8 @@ html {
 	cursor: pointer;
 	pointer-events: none;
 	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
@@ -32,6 +35,8 @@ html {
 	pointer-events: auto;
 	opacity: 1;
 	bottom: 30px;
+	-webkit-animation: tilt-in-bottom-2 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-bottom-2 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .scroll-up-btn:hover {
@@ -39,6 +44,31 @@ html {
 	color: white;
 }
 
+ @-webkit-keyframes tilt-in-bottom-2 {
+	0% {
+	  -webkit-transform: rotateY(-30deg) translateY(300px) skewY(30deg);
+			  transform: rotateY(-30deg) translateY(300px) skewY(30deg);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+			  transform: rotateY(0deg) translateY(0) skewY(0deg);
+	  opacity: 1;
+	}
+  }
+  @keyframes tilt-in-bottom-2 {
+	0% {
+	  -webkit-transform: rotateY(-30deg) translateY(300px) skewY(30deg);
+			  transform: rotateY(-30deg) translateY(300px) skewY(30deg);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+			  transform: rotateY(0deg) translateY(0) skewY(0deg);
+	  opacity: 1;
+	}
+  }
+  
 /* *************************** */
 /*        Scroll Bar           */
 /* *************************** */
@@ -69,10 +99,14 @@ html {
 /* *************************** */
 
 .navbar{
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
 .sticky .navbar {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.9)));
+	background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
 	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
 	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 			animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -127,6 +161,8 @@ html {
 	font-size: 20px;
 	color: white !important;
 	margin: 0 10px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -148,7 +184,8 @@ html {
 .navbar-toggler:focus {
 	border: none;
 	outline: none;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 }
 
 .navbar-toggler div {
@@ -156,6 +193,8 @@ html {
 	height: 3px;
 	background-color: black;
 	margin: 5px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
@@ -164,18 +203,24 @@ html {
 }
 
 .toggle .line1{
-	transform: rotate(-45deg) translate(-5px, 6px);
+	-webkit-transform: rotate(-45deg) translate(-5px, 6px);
+	    -ms-transform: rotate(-45deg) translate(-5px, 6px);
+	        transform: rotate(-45deg) translate(-5px, 6px);
 }
 .toggle .line2{
 	opacity: 0;
 }
 .toggle .line3{
-	transform: rotate(45deg) translate(-5px, -6px);
+	-webkit-transform: rotate(45deg) translate(-5px, -6px);
+	    -ms-transform: rotate(45deg) translate(-5px, -6px);
+	        transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* Footer */
 .footer {
 	color: white;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.9)));
+	background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
 	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
 }
 
@@ -238,7 +283,9 @@ html {
 	}
 
 	.nav-link:hover {
-		transform: scaleY(1.05);
+		-webkit-transform: scaleY(1.05);
+		    -ms-transform: scaleY(1.05);
+		        transform: scaleY(1.05);
 		font-size: 19px;
 		color: rgb(0, 132, 255) !important;
 		text-shadow: 0px 1px 5px blue;
@@ -264,7 +311,9 @@ html {
 
 	.nav-link:hover,
 	.nav-link:active {
-		transform: scaleY(1.05);
+		-webkit-transform: scaleY(1.05);
+		    -ms-transform: scaleY(1.05);
+		        transform: scaleY(1.05);
 		font-size: 17px;
 	}
 }

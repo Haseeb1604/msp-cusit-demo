@@ -7,9 +7,15 @@
 }
 
 .Events .Events-Cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .Events  .card{
     position: relative;
@@ -21,14 +27,19 @@
     overflow: hidden;
     border-radius: 12px;
     background: #f3f2f2;
-    box-shadow: 3px 3px 6px #cacaca, -3px -3px 6px #ffffff;
+    -webkit-box-shadow: 3px 3px 6px #cacaca, -3px -3px 6px #ffffff;
+            box-shadow: 3px 3px 6px #cacaca, -3px -3px 6px #ffffff;
     border: none;
     cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
 .Events .card:hover{
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 .card .card-img-top{

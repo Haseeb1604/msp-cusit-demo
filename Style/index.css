@@ -28,7 +28,9 @@ section .title::before {
 	width: 200px;
 	height: 3px;
 	background: #111;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 
 section .title::after {
@@ -39,7 +41,9 @@ section .title::after {
 	font-size: 20px;
 	color: rgb(0, 0, 255);
 	background: #fff;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 
 .owl-carousel .owl-dots{
@@ -60,8 +64,13 @@ section .title::after {
 	display: inline-block;
 	height: 20px;
 	margin: 0 2px 5px;
-	transform: translate3d(0px, -50%, 0px) scale(0.3);
-	transform-origin: 50% 50% 0;
+	-webkit-transform: translate3d(0px, -50%, 0px) scale(0.3);
+	        transform: translate3d(0px, -50%, 0px) scale(0.3);
+	-webkit-transform-origin: 50% 50% 0;
+	    -ms-transform-origin: 50% 50% 0;
+	        transform-origin: 50% 50% 0;
+	-webkit-transition: all 250ms ease-out 0s;
+	-o-transition: all 250ms ease-out 0s;
 	transition: all 250ms ease-out 0s;
 	border-radius: 6px;
 	width: 20px;
@@ -72,7 +81,8 @@ section .title::after {
 .owl-carousel .owl-dots .owl-dot.active span,
 .owl-carousel .owl-dots .owl-dot:hover span {
 	background: #3190E7;
-	transform: translate3d(0px, -50%, 0px) scale(0.7);
+	-webkit-transform: translate3d(0px, -50%, 0px) scale(0.7);
+	        transform: translate3d(0px, -50%, 0px) scale(0.7);
 	outline: none;
 	border: none;
 }
@@ -126,13 +136,18 @@ section .title::after {
 	overflow: hidden;
 	border-radius: 12px;
 	background: #f3f2f2;
-	box-shadow: 3px 3px 6px #cacaca, -3px -3px 6px #ffffff;
+	-webkit-box-shadow: 3px 3px 6px #cacaca, -3px -3px 6px #ffffff;
+	        box-shadow: 3px 3px 6px #cacaca, -3px -3px 6px #ffffff;
 	border: none;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
 .team:hover {
-	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
 }
 
 .team-section {
@@ -170,44 +185,96 @@ section .title::after {
 	padding: 20px;
 	top: 0;
 	left: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	background: rgba(255, 255, 255, 0.5);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	font-size: 0;
 	z-index: 1;
 	opacity: 0;
-	animation: exit 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+	-webkit-animation: exit 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+	        animation: exit 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes exit {
+	0% {
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
+		opacity: 1;
+	}
 }
 
 @keyframes exit {
 	0% {
-		transform: scaleY(1);
-		transform-origin: 100% 0%;
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
 		opacity: 1;
 	}
 	100% {
-		transform: scaleY(0);
-		transform-origin: 100% 0%;
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
 		opacity: 1;
 	}
 }
 
 .team:hover .team-social {
 	opacity: 1;
-	animation: entrance 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 10ms both;
+	-webkit-animation: entrance 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 10ms both;
+	        animation: entrance 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 10ms both;
+}
+
+@-webkit-keyframes entrance {
+	0% {
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
+		opacity: 1;
+	}
 }
 
 @keyframes entrance {
 	0% {
-		transform: scaleY(0);
-		transform-origin: 100% 0%;
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
 		opacity: 1;
 	}
 	100% {
-		transform: scaleY(1);
-		transform-origin: 100% 0%;
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
 		opacity: 1;
 	}
 }
@@ -218,11 +285,15 @@ section .title::after {
 	height: 30px;
 	margin: 0px 10px 250px;
 	text-align: center;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
 .team .team-social a:hover {
-	transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	    -ms-transform: scale(1.03);
+	        transform: scale(1.03);
 	width: 31px;
 	height: 31px;
 }
@@ -275,13 +346,18 @@ section .title::after {
 	overflow: hidden;
 	border-radius: 12px;
 	background: #f3f2f2;
-	box-shadow: 3px 3px 6px #cacaca, -3px -3px 6px #ffffff;
+	-webkit-box-shadow: 3px 3px 6px #cacaca, -3px -3px 6px #ffffff;
+	        box-shadow: 3px 3px 6px #cacaca, -3px -3px 6px #ffffff;
 	border: none;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
 .event:hover {
-	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
 }
 
 .event .event-img {
@@ -300,16 +376,25 @@ section .title::after {
 	padding: 20px;
 	top: 0;
 	left: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	background: rgba(0, 0, 5, 0.5);
 	color: white;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	font-size: 0;
 	z-index: 1;
 	opacity: 0;
-	animation: exit-event-title 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+	-webkit-animation: exit-event-title 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+	        animation: exit-event-title 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .Events-section .events-details{
@@ -321,8 +406,12 @@ section .title::after {
     margin-top: 20px;
     border-radius: 6px;
     border-color: #0042a5;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    box-shadow: -1px -1px 2px rgb(128, 128, 128), -2px -2px 4px rgb(90, 90, 90),
+    -webkit-box-shadow: -1px -1px 2px rgb(128, 128, 128), -2px -2px 4px rgb(90, 90, 90),
+                1px 1px 2px rgb(128, 128, 128), 2px 2px 4px rgb(90, 90, 90);
+            box-shadow: -1px -1px 2px rgb(128, 128, 128), -2px -2px 4px rgb(90, 90, 90),
                 1px 1px 2px rgb(128, 128, 128), 2px 2px 4px rgb(90, 90, 90);
 }
 
@@ -332,37 +421,82 @@ section .title::after {
 }
 
 .Events-section .events-details:active{
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+
+@-webkit-keyframes exit-event-title {
+	0% {
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
+		opacity: 1;
+	}
 }
 
 
 @keyframes exit-event-title {
 	0% {
-		transform: scaleY(1);
-		transform-origin: 100% 0%;
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
 		opacity: 1;
 	}
 	100% {
-		transform: scaleY(0);
-		transform-origin: 100% 0%;
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
 		opacity: 1;
 	}
 }
 
 .event:hover .event-title {
 	opacity: 1;
-	animation: entrance1 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 10ms both;
+	-webkit-animation: entrance1 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 10ms both;
+	        animation: entrance1 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 10ms both;
+}
+
+@-webkit-keyframes entrance1 {
+	0% {
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
+		opacity: 1;
+	}
 }
 
 @keyframes entrance1 {
 	0% {
-		transform: scaleY(0);
-		transform-origin: 100% 0%;
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
 		opacity: 1;
 	}
 	100% {
-		transform: scaleY(1);
-		transform-origin: 100% 0%;
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+		-webkit-transform-origin: 100% 0%;
+		        transform-origin: 100% 0%;
 		opacity: 1;
 	}
 }
@@ -388,10 +522,14 @@ section.joinus-section {
 	}
 	.team {
 		max-width: 300px;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 	}
 	.team:hover {
-		transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		    -ms-transform: scale(1.05);
+		        transform: scale(1.05);
 	}
 	.team .team-content h2 {
 		font-size: 20px;
@@ -429,7 +567,8 @@ section.joinus-section {
 
 	.team .team-img img {
 		height: 37vh;
-		object-fit: cover;
+		-o-object-fit: cover;
+		   object-fit: cover;
 	}
 	.team .btn {
 		font-size: 1rem !important;
@@ -500,7 +639,8 @@ section.joinus-section {
 	}
 	.event .event-img img {
 		height: 28vh;
-		object-fit: cover;
+		-o-object-fit: cover;
+		   object-fit: cover;
 	}
 }
 
@@ -594,7 +734,9 @@ section.joinus-section {
 		height: 32px;
 	}
 	.team .team-social a:hover{
-		transform: scale(1);
+		-webkit-transform: scale(1);
+		    -ms-transform: scale(1);
+		        transform: scale(1);
 		width: 33px;
 		height: 33px;
 	}

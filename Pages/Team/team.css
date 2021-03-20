@@ -1,3 +1,7 @@
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.8)!important;
+}
+
 .breadcrumb_nav{
     padding: 9px 0;
     background: rgb(0, 102, 255);
@@ -47,7 +51,9 @@ section .title::before{
     width: 230px;
     height: 3px;
     background: #111;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 section .title::after{
@@ -58,7 +64,9 @@ section .title::after{
     font-size: 20px;
     color: rgb(0, 0, 255);
     background: #fff;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .profile .img-container{
@@ -70,14 +78,21 @@ section .title::after{
 .profile .img-container img{
     width: 100%;
     border-radius: 12px;
+    background: -o-linear-gradient(305deg, #b3b3b3, #d5d5d5);
     background: linear-gradient(145deg, #b3b3b3, #d5d5d5);
-    box-shadow:  -5px 5px 9px #a1a1a1,
+    -webkit-box-shadow:  -5px 5px 9px #a1a1a1,
                 5px -5px 9px #ededed;
+            box-shadow:  -5px 5px 9px #a1a1a1,
+                5px -5px 9px #ededed;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
 .profile .img-container img:hover{
-    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04);
 }
 
 /* Connect Section Start */
@@ -97,11 +112,15 @@ section .title::after{
 
 
 .links .nav-item img{
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
 .links .nav-item img{
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 .links .navbar .nav-item .show-label{
@@ -115,6 +134,8 @@ section .title::after{
 .links .navbar .navbar-brand .brand{
     text-align: right;
 }
+
+
 
 @media (max-width: 990px){ 
     .breadcrumb_nav .breadcrumb_content{
@@ -174,7 +195,10 @@ section .title::after{
         font-size: 15px;
     }
     .links .navbar .navbar-nav{
-        flex-direction: column!important;
+        -webkit-box-orient: vertical!important;
+        -webkit-box-direction: normal!important;
+            -ms-flex-direction: column!important;
+                flex-direction: column!important;
     }
     .links .navbar .nav-item .show-label{
         display: block;
@@ -187,8 +211,12 @@ section .title::after{
         margin-bottom: 10px;
     }
     .links .nav-item a{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     }
     .links .nav-item a p{
         color: white;

@@ -22,9 +22,9 @@
 			crossorigin="anonymous"
 		/>
 
-		<link rel="shortcut icon" href="/Assets/msp.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="../../Assets/msp.png" type="image/x-icon" />
 
-		<link rel="stylesheet" href="/Style/nav.css" />
+		<link rel="stylesheet" href="../../Style/nav.css" />
 		<link rel="stylesheet" href="./Events.css" />
 		<link rel="stylesheet" href="../Team/team.css" />
 
@@ -109,11 +109,12 @@
 							id="certID"
 							class="form-control"
 							placeholder="Please Enter Your Certificate ID"
+							required
 						/>
-						<div class="form-text">
+						<small class="form-text">
 							Check your email from Umair.Jibran@studentambassadors.com
 							containing link to your certificate
-						</div>
+						</small>
 					</aside>
 					<aside class="col search-button">
 						<button
@@ -390,6 +391,10 @@
 					scroll.classList.remove("show");
 				}
 			};
+
+			function search() {
+				console.log("test");
+			}
 		</script>
 		<!-- <script src="/JavaScript/navbar.js"></script> -->
 	</body>
