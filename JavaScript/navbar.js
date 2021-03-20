@@ -1,7 +1,9 @@
 document.body.className += "js-loading";
+
 showpage = () =>{
     document.body.className = document.body.className.replace("js-loading","")
 }
+
 window.onload = () =>{
     showpage()
     let navbar = document.getElementById("fixedNav")
@@ -31,7 +33,9 @@ window.onload = () =>{
 
         navlists.forEach(li => {
             li.classList.remove("active")
-            if(li.classList.contains(current)) li.classList.add("active")
+            if(li.classList.contains(current)){
+                li.classList.add("active")
+            }
         })
     }
 
