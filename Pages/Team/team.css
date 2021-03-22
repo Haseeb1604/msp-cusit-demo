@@ -1,5 +1,14 @@
-.navbar-light .navbar-nav .nav-link {
-    color: rgba(0,0,0,.8)!important;
+.navbar .navbar-nav .nav-link {
+    color: rgba(0,0,0,.9)!important;
+}
+
+.sticky .navbar .navbar-nav .nav-link {
+	color: rgb(255, 255, 255) !important;
+}
+
+.sticky .navbar .navbar-nav .active,
+.navbar .navbar-nav .active{
+	color: rgb(0, 132, 255) !important;
 }
 
 .breadcrumb_nav{
@@ -135,7 +144,9 @@ section .title::after{
     text-align: right;
 }
 
-
+.links .brand a{
+    cursor: pointer;
+}
 
 @media (max-width: 990px){ 
     .breadcrumb_nav .breadcrumb_content{

@@ -209,12 +209,15 @@ html {
 
 .sticky .nav-link {
 	color: rgb(255, 255, 255) !important;
-	/* text-shadow: 0px 0px 3px rgb(0, 132, 255), 0px 1px 4px black !important; */
 }
 
-.sticky .active {
+.sticky .active{
 	color: rgb(0, 132, 255) !important;
-	/* text-shadow: 0px 0px 3px rgb(0, 132, 255), 0px 1px 1px black !important; */
+}
+
+.navbar .active{
+	color: rgb(0, 200, 255) !important;
+	text-shadow: 1px 1px 2px black;
 }
 
 .navbar-brand img {
@@ -235,10 +238,6 @@ html {
 	color: rgb(0, 217, 255) !important;
 }
 
-.active {
-	color: rgb(255, 255, 255) !important;
-	/* text-shadow: 0px 1px 5px black, 0px 2px 15px rgba(87, 87, 223, 0.4); */
-}
 
 .navbar-toggler {
 	border: none;

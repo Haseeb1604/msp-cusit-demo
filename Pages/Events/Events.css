@@ -1,3 +1,16 @@
+.navbar .navbar-nav .nav-link {
+	color: rgb(255, 255, 255) !important;
+}
+
+.sticky .navbar  .nav-link{
+	color: rgb(255, 255, 255) !important;
+}
+
+.sticky .navbar .navbar-nav .active,
+.navbar .navbar-nav .active{
+	color: rgb(0, 132, 255) !important;
+}
+
 .Certificates .title::after {
     content: "Redeem Certificate";
 }
