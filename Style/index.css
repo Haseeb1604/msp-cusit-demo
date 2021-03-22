@@ -92,31 +92,29 @@ section .title::after {
 
 .showcase {
 	background: url("../Assets/microsoft-learn.png") no-repeat;
+	background-size: cover;
 	background-attachment: fixed;
 	min-height: 100vh;
 	overflow: hidden;
 	background-blend-mode: overlay;
+	transition: all 0.4s ease;
 	-webkit-animation: kenburns-bottom 5s ease-out both;
 	        animation: kenburns-bottom 5s ease-out both;
 }
 
  @-webkit-keyframes kenburns-bottom {
 	0% {
-		background-size: 110%;
 		background-position: 20% 100%;
 	}
 	100% {
-		background-size: 100%;
 		background-position: 50% 50%;
 	}
   }
   @keyframes kenburns-bottom {
 	0% {
-		background-size: 110%;
 		background-position: 20% 100%;
 	}
 	100% {
-		background-size: 100%;
 		background-position: 50% 50%;
 	}
   }
